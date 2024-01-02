@@ -11,7 +11,7 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/blackhole.png"
             alt="logo"
             width={70}
             height={70}
@@ -19,7 +19,7 @@ const Navbar = () => {
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+            My Portfolio
           </span>
         </a>
 
@@ -39,13 +39,16 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
+            <a href="https://wa.me/6287887215670" className="cursor-pointer" target="display">
+              
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
-              width={24}
-              height={24}
+              width={34}
+              height={34}
             />
+            </a>
           ))}
         </div>
       </div>

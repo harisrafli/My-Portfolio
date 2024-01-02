@@ -1,4 +1,12 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "@/utils/motion";
 import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
@@ -7,24 +15,28 @@ const Projects = () => {
       className="flex flex-col items-center justify-center py-20"
       id="projects"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
-      </h1>
+      <motion.div
+        variants={slideInFromLeft(0.5)}
+        className='text-[30px] text-transparent font-medium mt-[10px] text-center mb-[15px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'
+        >
+            My Projects
+        </motion.div>
+      <motion.div
+        variants={slideInFromRight(0.5)}
+        className='cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
+        >
+            I have been working on a web based application project for my graduation purposes, here is my project.
+        </motion.div>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/pos.png"
+          title="Point Of Sales"
+          description="Produk point of sales standart yang dapat digunakan oleh perusahaan sebagai alat bantu pembelian dan penjualan barang."
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/cv.png"
+          title="Portfolio"
+          description="My Portfolio."
         />
       </div>
     </div>
