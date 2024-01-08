@@ -16,6 +16,8 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@iconify/icons-ic": "^1.2.13",
+    "@iconify/react": "^4.1.1",
     "@react-three/drei": "^9.88.4",
     "@react-three/fiber": "^8.15.4",
     "@types/node": "^20",
