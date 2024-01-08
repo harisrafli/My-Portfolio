@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <br></br>
             <div className="mb-[20px] text-[15px] text-center">
-                &copy; 2024 Haris Rafli Agustin
+                &copy; 2024. Haris Rafli Agustin
             </div>
         </div>
     </div>
